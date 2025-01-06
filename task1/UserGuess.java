@@ -62,7 +62,7 @@ public class UserGuess {
         }
 
         System.out.println("You guessed: " + guess);
-        System.out.println("The number was: " + randomNumber); //Reveal the number
+        System.out.println("The number was: " + randomNumber); 
 
         scanner.close();
     }
