@@ -3,7 +3,10 @@ import java.util.Scanner;
 public class Guessing {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) { 
+            
+
+        
 
         System.out.print("Enter the minimum value: ");
         int min = sc.nextInt();
@@ -29,4 +32,6 @@ public class Guessing {
             }
         } while (guess != secretNumber);
     }
+
+}
 }
