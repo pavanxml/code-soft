@@ -45,13 +45,13 @@ class ATM {
 
     public ATM() {
         this.scanner = new Scanner(System.in);
-        this.account = null; // Initially no account
+        this.account = null; 
     }
 
     public void createAccount() {
         System.out.print("Enter your account number: ");
         String accountNumber = scanner.next();
-        this.account = new BankAccount(accountNumber); // Create account object
+        this.account = new BankAccount(accountNumber); 
         System.out.println("Account created successfully.");
     }
 
@@ -120,7 +120,7 @@ class ATM {
                 return scanner.nextDouble();
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a number.");
-                scanner.next(); // Clear the invalid input
+                scanner.next(); 
             }
         }
     }
@@ -131,7 +131,7 @@ class ATM {
                 return scanner.nextInt();
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Invalid input. Please enter an integer.");
-                scanner.next(); // Clear the invalid input
+                scanner.next(); 
             }
         }
     }
